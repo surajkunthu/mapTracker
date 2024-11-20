@@ -1,3 +1,15 @@
-.link {
-    height: auto;
+.container{
+    background-color: #c0e7f3;
+    height: 600px;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #2fcba7;
+    color: white;
+    text-align: center;
+    z-index: 1;
 }

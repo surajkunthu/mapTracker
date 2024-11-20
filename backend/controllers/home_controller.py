@@ -37,7 +37,6 @@ templates = Jinja2Templates(directory="./frontend/templates")
 @home_router.get("/", response_model_by_alias=False, status_code=status.HTTP_200_OK)
 async def read_home(request: Request):
     try:
-        print("hi")
         return templates.TemplateResponse("home.html", {"request": request})
     except:
         raise HTTPException(status_code=status.HTTP_500_INTERNAL_SERVER_ERROR, detail="server error")
